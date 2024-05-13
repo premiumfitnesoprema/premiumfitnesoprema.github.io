@@ -8,7 +8,7 @@
 }
 /* ===== Colours ===== */
 :root{
-    --body-color: white; /*#E4E9F7*/
+    --body-color: #E4E9F7;; /*#E4E9F7*/
     --nav-color: white;
     --side-nav: #010718;
     --text-color: black;
@@ -23,7 +23,7 @@ body{
 }
 
 body.dark{
-    --body-color: #18191A;
+    --body-color: #393838;
     --nav-color: #242526;
     --side-nav: #242526;
     --text-color: #32b6fc;
@@ -248,10 +248,11 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 
 .footer{
+  background-color: #E4E9F7;
   display: flex;
   flex-direction: row;
   margin-top: 20px;
-  background-color: var(--nav-color);
+  /*background-color: var(--nav-color);*/
   min-height: 150px;
   margin-left: 5%;
   margin-right: 5%;
@@ -261,6 +262,7 @@ nav .navbar .links li:hover .js-sub-menu{
 
 .logoti{
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
   grid-gap: 5px;
   padding-left: 1%;
@@ -276,13 +278,13 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 .content{
   background-color: #E4E9F7; /*#E4E9F7*/
-  margin-left: 5%;
-  margin-right: 5%;
+  /*margin-left: 5%;
+  margin-right: 5%;*/
 }
 
 .row{
   border-radius: 3px;
-  /*border-style: solid;*/
+ /* border-style: solid;*/
 }
 
 .footer .row{
@@ -319,39 +321,59 @@ nav .navbar .links li:hover .js-sub-menu{
   
 
 .slika{
+  display: block;
   width: 100%;
+  height: auto;
+  margin: auto;
+  width: 95%; 
   max-width: 400px;
 }
 
 .container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Two columns on desktop */
+  grid-gap: 15px;
   padding-top: 50px;
   padding-left: 1%;
   padding-right: 1%;
+  
 }
-
 
 .opis {
   padding-top: 120px;
-  padding-left: 15%;
-  padding-right: 15%;
+ /* padding-left: 15%;*/
+ /* padding-right: 15%;*/
+ text-align: center;
   margin: 10px;
-  border-radius: 3px;
+  border-radius: 20px;
   /*border-style: solid;*/
   font-size: 1.2em;
+  background-color: #c8d2f0;
+}
+
+.text_opis{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 2%;
+}
+.text{
+  padding-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .opis_firm{
+  background-color: #c8d2f0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  border-radius: 20px;
+  text-align: center;
   align-items: center;
-  border-radius: 3px;
   padding-bottom: 20px;
+
   /*border-style: solid;*/
 }
+
 
 
 
