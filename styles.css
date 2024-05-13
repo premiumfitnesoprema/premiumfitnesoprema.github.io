@@ -115,6 +115,12 @@ nav .navbar .links li .sub-menu{
   display: none;
   z-index: 2;
 }
+
+nav .navbar .links li .sub-menu .arrow{
+  width: 2px;
+}
+
+
 nav .navbar .links li:hover .htmlCss-sub-menu,
 nav .navbar .links li:hover .js-sub-menu{
   display: block;
@@ -248,7 +254,7 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 
 .footer{
-  background-color: #E4E9F7;
+  background-color: var(--body-color);
   display: flex;
   flex-direction: row;
   margin-top: 20px;
@@ -277,7 +283,8 @@ nav .navbar .links li:hover .js-sub-menu{
 
 }
 .content{
-  background-color: #E4E9F7; /*#E4E9F7*/
+  /*background-color: #E4E9F7; #E4E9F7*/
+  background-color: var(--body-color); /*#E4E9F7*/
   /*margin-left: 5%;
   margin-right: 5%;*/
 }
@@ -340,7 +347,7 @@ nav .navbar .links li:hover .js-sub-menu{
 }
 
 .opis {
-  padding-top: 120px;
+  padding-top: 100px;
  /* padding-left: 15%;*/
  /* padding-right: 15%;*/
  text-align: center;
